@@ -87,3 +87,5 @@ The basic verification for the bank account is really simple I only check if the
 
 In reality when a transaction finishes (the amount is transferred), the application should notify the user or the front-end.
 
+For testing the consistency/syncronization of the requests you can add a uncomment the thread.sleep in the TransactionTask.class
+

@@ -54,7 +54,7 @@ public class TransactionTask implements Runnable {
 		
 		try {
 			//Just to see if the queuing works
-			Thread.sleep(2000); 
+			//Thread.sleep(2000); 
 			if(TransactionDao.verify(from, to, Double.valueOf(amount))) {
 				logger.info("Account Verified");
 				if(TransactionDao.transfer(from, to, Double.valueOf(amount))) {
